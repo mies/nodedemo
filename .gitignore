@@ -1,0 +1,4 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#node_modules should be installed using npm install and package.json
+node_modules
