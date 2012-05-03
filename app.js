@@ -1,9 +1,12 @@
-var http = require('http');
-var port =  process.env.PORT || 1337;
+var express = require('express');
 
-http.createServer(function (req, res) {
-  'use strict';
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World Domination!\n');
-}).listen(port, "127.0.0.1");
-console.log('Server running at http://127.0.0.1:'+ port);
+var app = express.createServer(express.logger());
+
+app.get('/', function(request, response) {
+    response.send('Hello World!');
+});
+
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log("Listening on " + port);
+});
