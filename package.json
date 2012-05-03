@@ -1,5 +1,4 @@
 {
   "name": "nodedemo",
-  "version": "0.0.1",
-  "scripts" : { "test" : "nodeunit test"}
+  "version": "0.0.1"
 }
