@@ -2,6 +2,7 @@
   "name": "nodedemo",
   "version": "0.0.1",
   "dependencies": {
+    "nodeunit":"0.7.x",
     "express": ">=2"
   },"engines": {
       "node": "0.6.x",
