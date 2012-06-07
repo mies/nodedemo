@@ -1,0 +1,16 @@
+{
+  "enable_diagnostics": true,
+  "npm_test": { "ignore": true  },
+  "services": {
+    "mysql" : true,
+    "postgresql": { "enabled" : false , "port" : 666}
+  },
+  "ignoreSteps": ["npm_test"],
+  "preScripts" : ["echo 1"],
+  "customSteps" :
+  {
+    "nodeunit" : "nodeunit test --reporter junit --output /report/custom_nodeunit"
+  },
+  "postScripts" : []
+
+}
