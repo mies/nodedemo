@@ -6,11 +6,11 @@
     "postgresql": { "enabled" : false , "port" : 666}
   },
   "ignoreSteps": ["npm_test"],
-  "preScripts" : ["echo 1"],
-  "customSteps" :
+  "preScriptsz" : ["echo 1"],
+  "customStepsz" :
   {
     "nodeunit" : "nodeunit test --reporter junit --output /report/custom_nodeunit"
   },
-  "postScripts" : []
+  "postScriptsz" : []
 
 }
