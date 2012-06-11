@@ -6,15 +6,15 @@ exports.testSomething2 = function(test) {
     'use strict';
     test.expect(1);
 
-  /*
+
 
   console.log('process.env.WERCKER_MYSQL_IPADDRESS');
   console.log(process.env.WERCKER_MYSQL_IPADDRESS);
 
   var connection = mysql.createConnection({
     host     : process.env.WERCKER_MYSQL_IPADDRESS || 'localhost',
-    user     : 'me',
-    password : 'secret'
+    user     : 'wercker',
+    password : 'wercker'
   });
 
   connection.connect();
@@ -33,10 +33,7 @@ exports.testSomething2 = function(test) {
 
   connection.end();
 
-  */
 
-  test.ok(1, 'this assertion should pass');
-      test.done();
 
 };
 

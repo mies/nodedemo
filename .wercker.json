@@ -3,6 +3,7 @@
   "npm_test": { "ignore": true  },
   "services": {
     "mysql" : true,
+    "redis" : true,
     "postgresql": { "enabled" : false , "port" : 666}
   },
   "ignoreSteps": ["npm_test"],
