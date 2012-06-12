@@ -7,7 +7,7 @@
     "postgresql": { "enabled" : false , "port" : 666}
   },
   "ignoreSteps": ["npm_test"],
-  "preScriptsz" : ["echo 1"],
+  "preScripts" : ["echo 1","echo $WERCKER_MYSQL_IPADDRESS", " mysql -h $WERCKER_MYSQL_IPADDRESS -u wercker" ],
   "customStepsz" :
   {
     "nodeunit" : "nodeunit test --reporter junit --output /report/custom_nodeunit"
