@@ -1,3 +1,3 @@
-[![Build Status](http://app.wercker.com/status/cd23c5d8-1894-4bcd-bccf-32fcfab94f3c)](http://skymesh.herokuapp.com/)
+![Build Status](http://app.wercker.com:3000/status/a94ed280-8ecf-4bc4-bba7-da51d7990437)
 
 #nodedemo
