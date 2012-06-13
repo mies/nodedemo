@@ -12,6 +12,7 @@
     },
   "subdomain" : "sadfsaddsadasfadsf",
   "scripts" : {
+    "start" : "./app.js",
     "test" : "nodeunit test --reporter junit --output /report/node_test"
   }
 }
