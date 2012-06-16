@@ -3,37 +3,39 @@ var mysql = require('mysql');
  * @param {Object} test node-unit test object.
  */
 exports.testSomething2 = function(test) {
-    'use strict';
-    test.expect(1);
+  'use strict';
+  test.expect(1);
 
 
+  /*
+   console.log('process.env.WERCKER_MYSQL_IPADDRESS');
+   console.log(process.env.WERCKER_MYSQL_IPADDRESS);
 
-  console.log('process.env.WERCKER_MYSQL_IPADDRESS');
-  console.log(process.env.WERCKER_MYSQL_IPADDRESS);
+   var connection = mysql.createConnection({
+   host     : process.env.WERCKER_MYSQL_IPADDRESS || 'localhost',
+   user     : 'wercker',
+   password : 'wercker'
+   });
 
-  var connection = mysql.createConnection({
-    host     : process.env.WERCKER_MYSQL_IPADDRESS || 'localhost',
-    user     : 'wercker',
-    password : 'wercker'
-  });
+   connection.connect();
 
-  connection.connect();
+   connection.query('SELECT 1', function(err, rows, fields) {
+   if(err){
+   console.log(err);
+   }
+   //if (err) throw err;
 
-  connection.query('SELECT 1', function(err, rows, fields) {
-    if(err){
-      console.log(err);
-    }
-    //if (err) throw err;
+   test.ok(1, 'this assertion should pass');
+   test.done();
 
-    test.ok(1, 'this assertion should pass');
-    test.done();
+   console.log('Query result: ', rows);
+   });
 
-    console.log('Query result: ', rows);
-  });
+   connection.end();
 
-  connection.end();
-
-
+   */
+  test.ok(1, 'this assertion should pass');
+  test.done();
 
 };
 
@@ -42,8 +44,8 @@ exports.testSomething2 = function(test) {
  * @param {Object} test node-unit test object.
  */
 exports.testSomethingEls = function(test) {
-    'use strict';
-    test.expect(1);
-    test.ok(1, 'this assertion should FAIL');
-    test.done();
+  'use strict';
+  test.expect(1);
+  test.ok(1, 'this assertion should FAIL');
+  test.done();
 };
