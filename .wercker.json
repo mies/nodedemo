@@ -1,6 +1,6 @@
 {
   "enable_diagnostics": true,
-  "npm_test": { "enabled": true  },
+  "node_test": { "enabled": false  },
   "services": {
     "mysql" : true,
     "redis" : false,
