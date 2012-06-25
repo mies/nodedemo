@@ -60,7 +60,7 @@ exports.testRequire = function(test) {
   'use strict';
   test.expect(1);
   var fs = require('fs');
-  fs.fileExists = function(callback){ callback(true);}
+  fs.fileExists = function(callback){ callback(true);};
 
   var result = require('./f').wercker(
     function(r){

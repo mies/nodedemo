@@ -5,5 +5,5 @@ exports.wercker = function(callback){
   'use strict';
   path.fileExists('iets', function(result){
     callback(result);
-  })
+  });
 };
