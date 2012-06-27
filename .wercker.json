@@ -7,7 +7,6 @@
     "redis" : false,
     "postgresql": { "enabled" : false , "port" : 666}
   },
-  "preTestScripts" : ["echo start", "echo $WERCKER_ROOT", "echo end" ],
   "customStepsa" :
   {
     "nodeunit" : "nodeunit test --reporter junit --output /report/custom_nodeunit"
