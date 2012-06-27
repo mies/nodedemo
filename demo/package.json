@@ -1,0 +1,13 @@
+{
+  "name": "nodedemo",
+  "version": "0.0.1",
+  "engines": {
+      "node": "0.6.x",
+      "npm":  "1.0.x"
+    },
+  "subdomain" : "sadfsaddsadasfadsf",
+  "scripts" : {
+    "test" : "echo jemoeder",
+    "start" : "./app.js"
+  }
+}
