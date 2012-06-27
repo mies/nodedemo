@@ -1,8 +1,9 @@
 {
   "enable_diagnostics": true,
+  "root": "demo",
   "node_test": { "enabled": false  },
   "services": {
-    "mysql" : true,
+    "mysql" : false,
     "redis" : false,
     "postgresql": { "enabled" : false , "port" : 666}
   },
