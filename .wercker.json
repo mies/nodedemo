@@ -1,7 +1,7 @@
 {
   "enable_diagnostics": true,
   "root": "demo",
-  "node_test": { "enabled": false  },
+  "node_test": { "enabled": true },
   "services": {
     "mysql" : false,
     "redis" : false,
