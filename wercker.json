@@ -7,7 +7,7 @@
     "redis" : false,
     "postgresql": { "enabled" : false , "port" : 666}
   },
-  "customSteps" :
+  "customStepsA" :
   {
     "nodeunit" : "nodeunit test --reporter junit --output /report/custom_nodeunit"
   },
